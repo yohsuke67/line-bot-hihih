@@ -1,11 +1,20 @@
 const { OpenAI } = require('openai');
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
+let openai;
 
 async function getBestAnswer(userQuery, qaList) {
     try {
+        if (!process.env.OPENAI_API_KEY) {
+            console.error("OPENAI_API_KEY is missing from environment variables");
+            return "申し訳ありません。システムのAI設定に不備があります。";
+        }
+
+        if (!openai) {
+            openai = new OpenAI({
+                apiKey: process.env.OPENAI_API_KEY,
+            });
+        }
+
         const context = qaList.map(item => `Q: ${item.ask}\nA: ${item.answer}`).join('\n\n');
 
         const prompt = `
