@@ -7,11 +7,20 @@ const config = {
     channelSecret: process.env.CHANNEL_SECRET,
 };
 
-const client = new line.Client(config);
+let client;
 
 async function handleEvent(event) {
     if (event.type !== 'message' || event.message.type !== 'text') {
         return Promise.resolve(null);
+    }
+
+    if (!config.channelAccessToken) {
+        console.error("CHANNEL_ACCESS_TOKEN is missing!");
+        return Promise.resolve(null);
+    }
+
+    if (!client) {
+        client = new line.Client(config);
     }
 
     const userMessage = event.message.text;
