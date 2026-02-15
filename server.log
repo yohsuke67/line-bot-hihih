@@ -1,0 +1,705 @@
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  override existing env vars with { override: true }
+listening on 3000
+Incoming request: GET /
+Incoming request: GET /webhook
+Incoming request: POST /webhook
+Incoming request: POST /webhook
+Incoming request: POST /webhook
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"7295a0853a374914a882b9c782bac875","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"86b0bc53b3cb459bb1710e75ec5794c6","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"7295a0853a374914a882b9c782bac875","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"86b0bc53b3cb459bb1710e75ec5794c6","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"7295a0853a374914a882b9c782bac875","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
+HTTPError: Request failed with status code 400
+    at HTTPClient.wrapError (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:110:20)
+    at /Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:15:88
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Axios.request (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:4791:14)
+    at async HTTPClient.post (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/@line/bot-sdk/dist/cjs/http-axios.js:29:21)
+    at async Promise.all (index 0) {
+  statusCode: 400,
+  statusMessage: 'Bad Request',
+  originalError: AxiosError: Request failed with status code 400
+      at settle (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:2151:12)
+      at IncomingMessage.handleStreamEnd (/Users/hayakawayohsuke/Desktop/helloworld/hihihi/node_modules/axios/dist/node/axios.cjs:3545:11)
+      at IncomingMessage.emit (node:events:520:35)
+      at endReadableNT (node:internal/streams/readable:1701:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+    isAxiosError: true,
+    code: 'ERR_BAD_REQUEST',
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      method: 'post',
+      url: 'https://api.line.me/v2/bot/message/reply',
+      data: '{"messages":[{"type":"text","text":"3900円　ハイシーズンは4500円"}],"replyToken":"86b0bc53b3cb459bb1710e75ec5794c6","notificationDisabled":false}',
+      allowAbsoluteUrls: true
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 155,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v2/bot/message/reply HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Authorization: Bearer rfaJ4bpu4rQH3fPokUQdg6DVrs59DX1Nh9ORWkctpmDWeLlvcA3PTAlf9LSog5GkWStLi53xag+eMMYT6aT4LF+WwVd4NkEn97APBw+hYj7u1GYufbxYm7+4jJ7bQdDH/rSCTpRZXDgO7p1ZMG/hagdB04t89/1O/w1cDnyilFU=\r\n' +
+        'User-Agent: @line/bot-sdk/10.6.0\r\n' +
+        'Content-Length: 155\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.line.me\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/bot/message/reply',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.line.me',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      Symbol(shapeMode): false,
+      Symbol(kCapture): false,
+      Symbol(kBytesWritten): 0,
+      Symbol(kNeedDrain): false,
+      Symbol(corked): 0,
+      Symbol(kChunkedBuffer): [],
+      Symbol(kChunkedLength): 0,
+      Symbol(kSocket): [TLSSocket],
+      Symbol(kOutHeaders): [Object: null prototype],
+      Symbol(errored): null,
+      Symbol(kHighWaterMark): 65536,
+      Symbol(kRejectNonStandardBodyWrites): false,
+      Symbol(kUniqueHeaders): null
+    },
+    response: {
+      status: 400,
+      statusText: 'Bad Request',
+      headers: [Object [AxiosHeaders]],
+      config: [Object],
+      request: [ClientRequest],
+      data: [Object]
+    },
+    status: 400
+  }
+}
+Incoming request: POST /webhook
